@@ -1,0 +1,133 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --success-color: #2ecc71;
+    --errror-color: #e74c3c;
+    --metalic-brown: #663b00;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    --special-box-shadow: #663b00 1px 1px 10px 4px;
+    --border: 2rem solid rgba(0,0,0,.1);
+    --outline: .1rem solid rgba(0,0,0,.1);
+}
+
+#container{
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    width: 50rem;
+    margin: auto;
+    margin-top: 4rem;
+    text-align: center;
+    padding: .5rem;
+    position: relative;
+}
+.btn{
+    position: relative;
+    width: 85px;
+    height: 40px;
+    margin-top: .5rem;
+    margin-left: .5rem ;
+    padding: .25rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid var(--black);
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.25s ease;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: var(--metalic-brown);
+    color: white;
+}
+
+
+.task-container{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin: 1.5rem;
+    padding: 1rem;
+}
+
+li{
+    list-style: none;
+    padding: .5rem;
+    border-bottom: 1.3px dotted var(--light-color);
+}
+
+
+
+#heading{
+    background-color: var(--metalic-brown);
+    color: white;
+    display: inline-block;
+    margin: .5rem;
+    padding: .25rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+#add-new-task{
+    border: 1px solid var(--light-color);
+    border-radius: 6px;
+    padding-left: 4px;
+    margin: .5rem;
+    width: 16rem;
+    height: 2.5rem;
+    outline: none;
+}
+
+#add-new-task:focus{
+    border: 2px solid var(--metalic-brown);
+}
+
+#add-new-box{
+    background-color: #F4E4C1;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+
+}
+
+#add-label{
+    color: var(--black);
+}
+
+.task-boxs{
+    background-color: #F4E4C1;
+    padding: 2rem;
+    border-radius: 10px;
+    width: auto;
+    text-transform: uppercase;
+}
+
+input[type='checkbox']:checked {
+    accent-color: var(--metalic-brown);
+}
+
+
+label{
+    color: var(--metalic-brown);
+    margin-bottom: 5px;
+    font-size: larger;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+@media (max-width: 600px) {
+
+    .task-container{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+
+        <!-- Code for google fonts cdn -->
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div><img src="icons8-todo-list-100.png" style="position: absolute; top: 0rem; left: 0%; height: 5rem; width: 5rem;" alt=""></div>
+        <h1 id="heading">T0-Do Application</h1>
+        <!-- Add New Task Section -->
+        <form id="add-new-box">
+            <label id="add-label">Add New Task</label>
+            <input type="text" id="add-new-task">
+            <input type="submit" value="Add Task" class="btn" id="submit-btn">
+        </form>
+
+        <div class="task-container">
+
+        <!-- Incomplete Tasks Section -->
+        <div class="task-boxs" id="incomplete-box">
+            <h2>Incomplete Tasks</h2>
+            <ul id="incomplete-ul" class="items">
+                <li class="item">
+                    <input type="checkbox">
+                    <label>Task Name</label>
+                </li>
+                <li class="item">
+                    <input type="checkbox">
+                    <label>Task Name</label>
+                </li>
+                <li class="item">
+                    <input type="checkbox">
+                    <label>Task Name</label>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Complete Tasks Section -->
+        <div class="task-boxs" id="complete-box">
+            <h2>Complete Tasks</h2>
+            <ul class="items" id="complete-ul">
+                <li class="item">
+                    <label>Task Name</label>
+                    <button class="btn" id="delete-btn">Delete</button>
+                </li>
+            </ul>
+        </div>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
